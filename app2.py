@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # STEP 2: Load Dataset
-df = pd.read_csv(r"C:\Users\MANAKARI SIR\Downloads\yara_fertilizer_project\large_crop_fertilizer_data.csv")  # replace with your path
+df = pd.read_csv(df = pd.read_csv("large_crop_fertilizer_data.csv"))  # replace with your path
 print(df.head())
 
 # STEP 3: Exploratory Data Analysis
