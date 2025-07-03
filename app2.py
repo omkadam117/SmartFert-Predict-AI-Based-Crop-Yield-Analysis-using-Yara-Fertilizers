@@ -1,4 +1,3 @@
-pip install pandas numpy matplotlib seaborn scikit-learn streamlit joblib
 
 # STEP 1: Import Libraries
 import pandas as pd
