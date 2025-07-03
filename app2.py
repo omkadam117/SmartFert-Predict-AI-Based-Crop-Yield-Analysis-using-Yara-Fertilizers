@@ -1,4 +1,3 @@
-
 # STEP 1: Import Libraries
 import pandas as pd
 import numpy as np
@@ -53,7 +52,11 @@ def evaluate(model_name, y_true, y_pred):
     print(f"\n🔍 {model_name} Performance:")
     print(f"R² Score: {r2_score(y_true, y_pred):.4f}")
     print(f"MAE: {mean_absolute_error(y_true, y_pred):.4f}")
-    print(f"RMSE: {mean_squared_error(y_true, y_pred, squared=False):.4f}")
+    
+    # Calculate RMSE manually
+    mse = mean_squared_error(y_true, y_pred)
+    rmse = np.sqrt(mse)  # Calculate RMSE
+    print(f"RMSE: {rmse:.4f}")
 
 # STEP 9: Model Evaluation
 evaluate("Linear Regression", y_test, lr_pred)
